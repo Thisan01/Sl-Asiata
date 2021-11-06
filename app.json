@@ -1,259 +1,157 @@
 {
-    "name": "Asiata V1",
-    "description": "🧚‍♂️ꜱʟ ᴀꜱɪᴀᴛᴀ ɴᴇᴡ💫 is a helping to control whatsapp",
-    "logo": "https://telegra.ph/file/76600582eaec8135cbb62.jpg",
-    "keywords": ["whatsapp", "userbot", "bot", "api", "aii", "Asiata"],
-    "repository": "https://github.com/Thisan01",
-    "website":   "https://chat.whatsapp.com/IfrEWJ30nUd3Cbi3uIvtIb",
-    "success_url": "https://chat.whatsapp.com/IfrEWJ30nUd3Cbi3uIvtIb",
+    "name": "ASIATA",
+    "description": "ONE OF SINHALA BOT FOR SRI LANKA",
+    "logo": "https://i.ibb.co/WGNfQhB/IMG-20210820-001112.jpg",
+    "keywords": ["whatsapp", "userbot", "bot", "api", "ai"],
+    "repository": "https://github.com/Thisan01/Sl-Asiata",
+    "website":   "https://chat.whatsapp.com/La5MMeWqcLK0Msq50LvnqX",
+    "success_url": "https://chat.whatsapp.com/La5MMeWqcLK0Msq50LvnqX",
     "stack": "container",
     "env": {
-        "ASIATA_SESSION": {
-            "description": "Paste your QR session that you got from Github Repository.",
+        "A_XTROID_SESSION": {
+            "description": "Type here yours X-Troid Session (after get scanning QR)  QR කේතය scan කර ලබාගත් අදාල කේතය මෙහි යොදන්න.",
             "required": true
         },
-        "BUTTON_CMD": {
-            "description": "YOU NEED BUTTON COMMANDS TYPE ( btn ) YOU NEED TEXT COMMAND TYPE ( txt ) බටන් කමාන්ඩ් සමහර ෆෝන් වලට වැඩ කරන් නෑ..",
-            "value":"btn"
-        },
-        "ALIVE_LOGO": {
-            "description": "If you do not want to change Alive Logo put here to your image direct link or, type default.",
-            "required": false,
-            "value": "default"
-        },
-        
-        "TIME_ZONE": {
-            "description": "YOUR COUNTRY TIME ZONE ලන්කාවෙ අය තියන විදිහට තියන්න..",
-            "value":"Asia/Colombo"
-        },
         "SUDO": {
-            "description": "If you do not know how to use it, leave it blank! SUDO mode; Your number must be an international number. So you have to have your number after the country code. Example: 947xxxxxxxx (Sri lanka No. 94)",
+            "description": "Leave blank if you don't know how to use it! Sudo mode;ඔබගේ බොත වෙත තවත් හිමිකරුවකු එක කිරීමට අදාල එම whatsapp අංකය මෙලෙස යොදන්න +94)",
             "required": false
         },
         "LANGUAGE": {
-            "description": "Enter your language. To enable Sinhala, type SI. or to enable English, type EN.",
+            "description": "Bot language. English => en, සිංහල => SI",
             "required": true,
-            "value": "si"
+            "value": "en"
         },
-        "WELCOME": {
-            "description": "Welcome message type pp or gif",
-            "required": true,
-            "value": "pp"
-        },
-        "AUTO_BIO": {
-            "description": "Setup AUTO BIO feature. Adding a live clock for your WhatsApp about.",
+        "ANTİ_LİNK": {
+            "description": "⚠️Link Blocking System.⚠️ලින්ක් දමන්නන් සමුහයෙන් ඉවත් කිරීමට",
             "required": true,
             "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": "Set true for auto date, time in biography.ඔබගේ විස්තරය කාලීනව වෙනස් වීමට (අවශ්‍ය නැතිනම් වෙනස් නොකරන්න )",
+            "required": true,
+            "value": "false"
+        },
+        "CP": {
+            "description": "Photo caption ;ලෝගෝ /පින්තුර පහළ ඇති නම වෙනස් කිරිමට අවශ්‍ය නම් මෙහි ඔබට අවශ්‍ය නම ලියන්න.",
+            "required": false
         },
         "HANDLERS": {
-            "description": "Do not change ❌ .  bot prefix to use commands.",
+            "description": "Donot change!.වෙනස් නොකරන්න!!!",
             "required": true,
-            "value": "^[.!#$,*@]"
+            "value": "^[*.!;#]"
         },
-        "ANTIBAD": {
-            "description": "Set True , Activate Anti-Bad word for your groups.",
-            "required": true,
-            "value": "false"
-        },
-        "ANTI_LINK": {
-            "description": "Set True , Activate anti link for your groups.",
-            "required": true,
-            "value": "false"
-        },
-        "GROUP_RULES": {
-            "description": "Set your group Rules.",
-            "required": true,
-            "value": "No Rules"
-        },
-        "GROUP_NAME_1": {
-            "description": "Set You 1 Group Name.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_LINK_1": {
-            "description": "Set You 1 Group link.",
-            "required": false,
-            "value": "default"
-        },
-        "WARN_MSG_1": {
-            "description": "Set You 1 Group warn.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_NAME_2": {
-            "description": "Set You 2 Group Name.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_LINK_2": {
-            "description": "Set You 2 Group link.",
-            "required": false,
-            "value": "default"
-        },
-        "WARN_MSG_2": {
-            "description": "Set You 2 Group warn.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_NAME_3": {
-            "description": "Set You 3 Group Name.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_LINK_3": {
-            "description": "Set You 3 Group link.",
-            "required": false,
-            "value": "default"
-        },
-        "WARN_MSG_3": {
-            "description": "Set You 3 Group warn.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_NAME_4": {
-            "description": "Set You 4 Group Name.",
-            "required": false,
-            "value": "default"
-        },
-        "GROUP_LINK_4": {
-            "description": "Set You 4 Group link.",
-            "required": false,
-            "value": "default"
-        },
-        "WARN_MSG_4": {
-            "description": "Set You 4 Group warn.",
-            "required": false,
-            "value": "default"
-        },
-        "CHAT_BOT": {
-            "description": "To enable / disable the AI chat bot. Use true to enable AI chat bot and true to activate AI chat bot.",
+        "NO_LOG": {
+            "description": "Set true if you don't want to see error log.නිතර පැමිණෙන දෝෂ පණිවුඩ නැවත තැබීමට මෙය මෙලෙසම තැබිය හැක",
             "required": true,
             "value": "false"
         },
         "SEND_READ": {
-            "description": "Need to show user whether bot message seen or not?",
+            "description": "Write true if you want to throw seen.ඔබට පැමිණෙන පණිවිඩ BOTලවා seen කරවිමට",
             "required": true,
             "value": "true"
         },
         "HEROKU": {
-            "description": "Heroku",
+            "description": "DONOT CHANGE; වෙනස් කිරීමෙන් වලකින්න",
             "required": true,
             "value": "true"
         },
         "HEROKU_API_KEY": {
-            "description": "https://dashboard.heroku.com/account Click this link. Scroll down for the API key. Then click the Reveal button. Copy the API key and paste the API Key empty box below.",
-            "required": true
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Use the same App name as first.",
+            "description": "Heroku API Key.හෙරොකු API කේතය",
             "required": true
         },
         "MUTE_MESSAGE": {
-            "description": "Message received when mute a group. If you do not want to change this message, type default.",
+            "description": "Customizable Mute Message! Use => default, to change back. සමුහ වැසීමේ පණිවිඩයට ඔබට කැමති එකක් එකතු කිරීමට",
             "required": false,
             "value": "default"
         },
         "BLOCK_CHAT": {
-            "description": "Select the chat where the bot does not work. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
+            "description": "Choose in which chat the bot won't work there. (SL=94) (US=1)Ex: 9471xxxx && 9471xxxx-1xxx or 9471xxxx,9471xxx... /සමුහයක් හෝ පුද්ගලයෙකු අවහිර කිරීමට",
             "required": false,
-            "value": "no chats added"
+            "value": "false"
         },
         "UNMUTE_MESSAGE": {
-            "description": "Message received when unmuteing a group.",
+            "description": "Customizable Unmute Message! Use => default, to change back.සමුහ නැවත විවුර්ත කරීමේ පණිවිඩය ඔබට අවශ්‍ය ලෙස සකසා මෙහි දමන්න",
             "required": false,
             "value": "default"
         },
         "BLOCK_MESSAGE": {
-            "description": "Modifiable chat block notification. If you do not want to change this message, type default.",
+            "description": "Customizable Block Message! Use => default, to change back. පුද්ගලයෙකු අවහිර කිරීමේ පණිවිඩය",
             "required": false,
             "value": "default"
         },
         "UNBLOCK_MESSAGE": {
-            "description": "Modifiable chat unblock notification. If you do not want to change this message, type default.",
+            "description": "Customizable Unblock Message! Use => default, to change back.අවහිර කල අයෙකු නැවත කතා කිරීමට අවස්ථාව දීමේ පණිවිඩය",
             "required": false,
             "value": "default"
         },
         "WORK_TYPE": {
-            "description": "The way the bot works. If you use public, everyone can use the bot. If you use private, only you can use your bot.",
+            "description": "Xtroid bot Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot. ඔබ සාදන්නේ පුද්ගලික bot එකක් නම් “private” ලෙසත් , පොදු botඑකක් නම් “public” ලෙසත් ලබාදෙන්න",
             "required": true,
             "value": "public"
-        },       
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP Name.ඉහල පළමුවෙන්ම පිරවූ APP නාමය",
+            "required": true
+        },
         "DEBUG": {
-            "description": "If you do not know this. Give it up.",
+            "description": "NO need to change, වෙනස් කිරීමට අවශ්‍ය නැත",
             "required": true,
             "value": "false"
-        },
-        "VOICE_CHAT": {
-            "description": "REPLY ANYONE MSG FOR VOICE ( THIS FEATURE coming soon )",
-            "required": true,
-            "value": "false"
-        },
-        "VOICE_CHAT_TYPE": {
-            "description": "AUTO VOICE REPLY VOICE SOUND ( baby , boy , girl ) COMING SOON..",
-            "required": true,
-            "value": "girl"
-        },
-        "WELCOME_LOGO": {
-            "description": "To change the welcome message video, enter your video link below",
-            "required": true,
-            "value":"https://telegra.ph/file/9607e065524da4ebe61cb.mp4"
-        },
-        "BYE_LOGO": {
-            "description": "Below is your video link to change Goodbye message video.",
-            "required": true,
-            "value":"https://telegra.ph/file/9d98c8ea6f6013b386b23.mp4"
         },
         "REMOVE_BG_API_KEY": {
-            "description": "Here you go to the website remove.bg and sign up and get an API key. Leave the API key in this space.",
+            "description": "Get API from https://remove.bg මෙම ලින්කුවෙන් ලබාගන්න https://remove.bg ",
+            "required": false
+        },
+        "GIF_WEL": {
+            "description": "set custom welcom gif past direct lnk of mp4 or gif ⚠️must not bigger than 2MB ( can cange after )/ලබාදී ඇති පිළිගැනීමේ පණිවිඩයට ඔබට අවශ්‍ය වීඩියෝවක් එක කිරීමට වීඩියෝවක ඩිරෙක් ලින්ක් එකක් මෙහි යොදන්න ⚠️2MB වලට අඩු",
+            "required": false
+        },
+        "GIF_BYE": {
+            "description": "set custom good bye gif past direct lnk of mp4 or gif ⚠️must not bigger than 2MB ( can cange after )/ලබාදී ඇති සමුදීමේ පණිවිඩයට ඔබට අවශ්‍ය වීඩියෝවක් එක කිරීමට වීඩියෝවක ඩිරෙක් ලින්ක් එකක් මෙහි යොදන්න ⚠️2MB වලට අඩු",
             "required": false
         },
         "ALIVE_MESSAGE": {
-            "description": "The message you get when you check whether the bot is online or not. This is not necessarily the case.",
+            "description": "Customizable Alive Message! Use => default, to change back./ALIVE පණිවිඩය ඔබට අවශ්‍ය පරිදි වෙනස් කරගැනීමට",
             "required": false,
-            "value": "default"
+            "value": "💥Asiata💥\nName: Asiata\nwhatsapp: https://chat.whatsapp.com/La5MMeWqcLK0Msq50LvnqX\nInfo : type .bot"
         },
         "BAN_MESSAGE": {
-            "description": "The message you get when someone commands you as .ban and removes it. If you do not want to change this message, type default.",
+            "description": "Customizable Ban Message! Use => default, to change back.යමෙකු සමුහයෙන් ඉවත් කරීමේ පණිවිඩය වෙනස් කිරීමට",
             "required": false,
             "value": "default"
         },
         "ADD_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "Customizable Add Message! Use => default, to change back.ඔබ විසින් යමෙකුව සමුහයට එකතුකිරිමේදී ලැබෙන පණිවිඩය. ",
             "required": false,
             "value": "default"
         },
         "KICKME_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "Customizable Kickme Message! Use => default, to change back.ඔබ සමුහයෙන් ඉවත් වීමේදී තබා එන අවසන් පණිවිඩය",
             "required": false,
             "value": "default"
         },
         "PROMOTE_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "Customizable Promote Message! Use => default, to change back.සමුහයේ යමෙකුගේ තනතුරු උසස් කිරීමේ පණිවිඩය",
             "required": false,
             "value": "default"
         },
         "DEMOTE_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "Customizable Demote Message! Use => default, to change back.තනතුරු පත්කිරීමේ පණිවිඩය",
             "required": false,
             "value": "default"
         },
         "AFK_MESSAGE": {
-            "description": "If you do not want to change this message, type default.",
+            "description": "Customizable AFK Message! Use => default, to change back.ඔබ දුරකතනයෙන් ඉවත්වන විට තබා යන පණිවිඩය",
             "required": false,
             "value": "default"
         },
-        "NO_ONLINE": {
-            "description": "This is not necessarily the case.",
-            "required": false,
-            "value": "true"
-        },
-        "CAPTION": {
-            "description": "LOGO MAKER CAPTION",
+        "GAN_IMAGE": {
+            "description": "Type image link for Gan Style plugin.",
             "required": true,
-            "value": "ᗰᗩᗪE ᗷY ᗩSIᗩTᗩ🧚‍♂️"
+            "value": "https://telegra.ph/file/2bb85d7b80b9ad96bcb96.jpg"
         },
-        "COFFEEHOUSE_API_KEY": {
-            "description": "Give it up. We give you this.",
+        "NO_ONLINE": {
+            "description": "Type true if you don't want to appear online.ගිණුම online වසා තැබීමට",
             "required": false,
             "value": "true"
         }
