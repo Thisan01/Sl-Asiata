@@ -23,19 +23,19 @@
         },
         "SONG_UPLOAD": {
             "description": "SONG UPLOAFING MESSAGE",
-            "value":"default"
+            "value":"Uploading your song🧚‍♂️"
         },
         "SONG_DOWNLOAD": {
             "description": "SONG DOWNLOADING MESSAGE",
-            "value":"default"
+            "value":"Downloading your song🧚‍♂️"
         },
         "VIDEO_UPLOAD": {
             "description": "VIDEO UPLOADING MESSAGE",
-            "value":"default"
+            "value":"Uploading your Video🧚‍♂️"
         },
         "VIDEO_DOWNLOAD": {
             "description": "VIDEO DOWNLOADING MESSAGE",
-            "value":"default"
+            "value":"Downloading your Video🧚‍♂️"
         },
         
         "TIME_ZONE": {
