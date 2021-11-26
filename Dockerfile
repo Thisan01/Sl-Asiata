@@ -20,7 +20,7 @@ FROM fusuf/whatsasena:latest
     #REM_BG_API_KEY = os.enviroviron.get("API_HASH", None)
     #BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     #REM_BG_API_KEY = os.enviroviron.get("API_HASH", None)
-    #BOT_TOKEN = os.environ.get("BOT_TOKEN", None).
+    #BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     #REM_BG_API_KEY = os.enviroviron.get("API_HASH", None)
     #BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
     #REM_BG_API_KEY = os.enviroviron.get("API_HASH", None)
@@ -1441,8 +1441,8 @@ FROM fusuf/whatsasena:latest
     #LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     #HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     #FBAN_GROUP = int(os.environ.get("FBAN_GROUP", False))
-RUN git clone https://github.com/DARKCRIME1/ng19 /root/ng19
-WORKDIR /root/ng19/
+RUN git clone https://github.com/1mxt1/lizy /root/lizy
+WORKDIR /root/lizy/
     #LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
     #HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
     #FBAN_GROUP = int(os.environ.get("FBAN_GROUP", False))
@@ -1457,7 +1457,7 @@ WORKDIR /root/ng19/
     #STRINGSESSION_2 = os.environ.get("STRINGSESSION_2", None)
     #S#TRINGSESSION_3 = os.environ.get("STRINGSESSION_3", None)
     #STRINGSESSION_4 = os.environ.get("STRINGSESSION_4", None)
-    #LOAD_UNOFFICIAL_PLUGINS = bool(stjrtobool(str(os.environ.get("LOAD_UNOFFICIAL_PLUGINS", False))))
+    #LOAD_UNOFFICIAL_PLUGINS = bool(strtobool(str(os.environ.get("LOAD_UNOFFICIAL_PLUGINS", False))))
     #PLUGIN_CHANNEL = os.environ.get("PLUGIN_CHANNEL", False)
     #TZ = os.environ.get("TZ", "Asia/Kolkata"f
     #MONGO_DB = os.environ.get("MONGO_DB", None)
